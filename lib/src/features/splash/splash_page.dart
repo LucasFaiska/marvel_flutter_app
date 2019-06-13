@@ -15,7 +15,7 @@ class SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     super.initState();
-    loadData();
+    startTimer();
   }
 
   @override
@@ -26,12 +26,12 @@ class SplashPageState extends State<SplashPage> {
         child: Image.asset('assets/marvel-logo-bookends.jpeg'));
   }
 
-  Future<Timer> loadData() async {
-    return new Timer(Duration(seconds: 2), onDoneLoading);
+  Future<Timer> startTimer() async {
+    return new Timer(Duration(seconds: 2), navigateToHome);
   }
 
-  onDoneLoading() async {
+  navigateToHome() async {
     Navigator.of(context)
-        .pushReplacement(MaterialPageRoute(builder: (context) => HomePage()));
+        .push(MaterialPageRoute(builder: (context) => HomePage()));
   }
 }
