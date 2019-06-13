@@ -8,10 +8,7 @@ class MarvelApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Marvel Flutter App',
-      theme: ThemeData(
-        primaryColor: Color(0xffED1D24),
-      ),
-      home: SplashPage()     
+      home: SplashPage()    
     );
   }
 }
