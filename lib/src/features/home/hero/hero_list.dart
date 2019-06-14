@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:marvel_flutter_app/src/features/details/details_page.dart';
 import 'package:marvel_flutter_app/src/features/home/hero/hero_card.dart';
-import 'package:marvel_flutter_app/src/models/marvel_hero.dart';
+import 'package:marvel_flutter_app/src/domain/marvel_hero.dart';
 
 class HeroesList extends StatelessWidget {
   final List<MarvelHero> heroesList;

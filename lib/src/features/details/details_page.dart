@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:marvel_flutter_app/src/features/details/comics_tab.dart';
+import 'package:marvel_flutter_app/src/features/details/appearances_tab.dart';
 import 'package:marvel_flutter_app/src/features/details/description_tab.dart';
-import 'package:marvel_flutter_app/src/features/details/events_tab.dart';
-import 'package:marvel_flutter_app/src/features/details/series_tab.dart';
-import 'package:marvel_flutter_app/src/features/details/stories_tab.dart';
 import 'package:marvel_flutter_app/src/features/style/text.dart';
-import 'package:marvel_flutter_app/src/models/marvel_hero.dart';
+import 'package:marvel_flutter_app/src/domain/marvel_hero.dart';
 
 class DetailsPage extends StatelessWidget {
   final MarvelHero hero;
@@ -94,7 +91,7 @@ class DetailsPage extends StatelessWidget {
                       child: DescriptionTab(hero),
                     ),
                     Container(
-                      child: ComicsTab(),
+                      child: AppearancesTab(),
                     ),
                   ],
                 ),

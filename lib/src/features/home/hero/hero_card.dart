@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:marvel_flutter_app/src/features/style/text.dart';
-import 'package:marvel_flutter_app/src/models/marvel_hero.dart';
+import 'package:marvel_flutter_app/src/domain/marvel_hero.dart';
 
 class HeroCard extends StatelessWidget {
   final MarvelHero hero;

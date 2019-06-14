@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:marvel_flutter_app/src/models/marvel_hero.dart';
+import 'package:marvel_flutter_app/src/domain/marvel_hero.dart';
 
 import 'hero/hero_list.dart';
 
